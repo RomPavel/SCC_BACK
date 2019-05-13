@@ -20,6 +20,15 @@ router
     } catch (err) {
       res.status(500).send(err);
     }
+  })
+  .put('/update', async (req, res) => {
+    try {
+      const { config, _id } = req.body;
+      await Software.findByIdAndUpdate(_id, { config, isConfigured: true });
+      res.status(200).send();
+    } catch (err) {
+      res.status(500).send(err);
+    }
   });
 
 // router.route('/')
