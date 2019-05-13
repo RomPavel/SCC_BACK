@@ -1,5 +1,5 @@
 import express from 'express';
-import { configSettings } from '../mocks/config.settings';
+import { configSettings } from '../mocks/catalogs/config.settings';
 
 const router = express.Router();
 

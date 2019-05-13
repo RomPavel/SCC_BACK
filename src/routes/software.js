@@ -1,5 +1,6 @@
 import express from 'express';
 import { Software } from '../models/software';
+import { calculate } from '../controllers/calculate';
 
 const router = express.Router();
 
@@ -24,7 +25,8 @@ router
   .put('/update', async (req, res) => {
     try {
       const { config, _id } = req.body;
-      await Software.findByIdAndUpdate(_id, { config, isConfigured: true });
+      const laboriousness = calculate(config);
+      await Software.findByIdAndUpdate(_id, { config, isConfigured: true, laboriousness });
       res.status(200).send();
     } catch (err) {
       res.status(500).send(err);

@@ -7,6 +7,7 @@ const softwareSchema = new Schema({
   cost: { type: String, default: '', },
   currency: { type: String },
   config: { type: Array, default: [] },
+  laboriousness: { type: Number },
   summary: { type: Object, default: {} },
   isConfigured: { type: Boolean, default: false },
 });
