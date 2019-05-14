@@ -8,7 +8,7 @@ const softwareSchema = new Schema({
   currency: { type: String },
   config: { type: Array, default: [] },
   laboriousness: { type: Number },
-  summary: { type: Object, default: {} },
+  employeeSalary: { type: Number },
   isConfigured: { type: Boolean, default: false },
 });
 

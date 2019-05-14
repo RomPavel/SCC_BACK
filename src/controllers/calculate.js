@@ -157,9 +157,3 @@ function isOptionsArraysEquals(configOptions, tableOptions) {
         return tableOptions.some(({ group: tableGroup, value: tableValue }) => confGroup === tableGroup && confValue === tableValue);
     })
 }
-
-function isArrayIsSubArray(configOptions, tableOptions) {
-    return configOptions.some(({ group: confGroup, value: confValue }) => {
-        return tableOptions.some(({ group: tableGroup, value: tableValue }) => confGroup === tableGroup && confValue === tableValue);
-    })
-}
