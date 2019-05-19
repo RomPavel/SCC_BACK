@@ -36,7 +36,7 @@ router
     try {
       const { employeeSalary, _id, currency } = req.body;
       const { laboriousness } = await Software.findById(_id);
-      const cost = employeeSalary === "" ? "" : `${(+laboriousness * +employeeSalary).toFixed(2)}`;
+      const cost = employeeSalary === "" ? "" : `${(+laboriousness / 31 * +employeeSalary).toFixed(2)}`;
       await Software.findByIdAndUpdate(_id, { cost, currency, employeeSalary });
       res.status(200).send();
     } catch (err) {
