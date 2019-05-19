@@ -1,11 +1,11 @@
-export const CODE_ANALISYS_GROUP = 'code analysis';
-export const ENV_ANALISYS_GROUP = 'environment analysis';
-export const COMPLEXITY_ANALYSIS_GROUP = 'complexity analysis';
-export const INCREASED_COMPLEXITY_GROUP = 'increased complexity'; 
-export const NOVELTY_OF_USE_GROUP = 'novelty of use'
-export const PATTERN_USAGE_GROUP = 'pattern usage'
-export const MEANS_ANALYSIS_GROUP = 'means analysis';
-export const OS_ANALYSIS_GROUP = 'OS analysis';
+export const CODE_ANALISYS_GROUP = 'Анализ функционала';
+export const ENV_ANALISYS_GROUP = 'Среда разработки';
+export const COMPLEXITY_ANALYSIS_GROUP = 'Анализ сложности';
+export const INCREASED_COMPLEXITY_GROUP = 'Анализ повышенной сложности'; 
+export const NOVELTY_OF_USE_GROUP = 'Анализ новизны'
+export const PATTERN_USAGE_GROUP = 'Использование стандартных модулей'
+export const MEANS_ANALYSIS_GROUP = 'Средства разработки';
+export const OS_ANALYSIS_GROUP = 'Характер ОС';
 
 // groups wich used only on backend
 export const COMPLEXITY_LEVEL_GROUP = 'complexity';
